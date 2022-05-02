@@ -36,12 +36,12 @@ public class cifrador {
                     for (int i = 0; i < decifrar.length(); i++) {
                         if(decifrar.charAt(i) == ' '){
                             System.out.print(" ");
-                        }else if(decifrar.charAt(i) == 'p'){ // verificar quando é ppp
-                            if((decifrar.charAt(i+1) != 'p')){
+                        }else if(decifrar.charAt(i) == 'p'){
+                            if((decifrar.charAt(i+1) == 'p')){
                                 System.out.print(decifrar.charAt(i + 1)); 
-                            }else{
-                                System.out.print(decifrar.charAt(i));
                             }
+                        }else{
+                            System.out.print(decifrar.charAt(i));
                         }
                     }
                     break;  
@@ -62,4 +62,6 @@ public class cifrador {
                 opcao = s.nextLine();
             }  
         }
-}}
+        s.close();
+    }
+}
