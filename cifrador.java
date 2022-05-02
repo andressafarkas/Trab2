@@ -32,13 +32,13 @@ public class cifrador {
                 case "2":
                     System.out.print("Digite o texto: ");
                     String decifrar = s.nextLine();
-                    System.out.print("Texto decifrado: ");
+                    System.out.print("Texto decifrado2: ");
                     for (int i = 0; i < decifrar.length(); i++) {
                         if(decifrar.charAt(i) == ' '){
                             System.out.print(" ");
                         }else if(decifrar.charAt(i) == 'p'){
-                            if((decifrar.charAt(i+1) == 'p')){
-                                System.out.print(decifrar.charAt(i + 1)); 
+                            if((decifrar.charAt(i+1) == 'p') && (decifrar.charAt(i+2) == 'p')){
+                                System.out.print('p'); 
                             }
                         }else{
                             System.out.print(decifrar.charAt(i));
